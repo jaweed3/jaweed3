@@ -1,9 +1,9 @@
 - 👋 Hi, I’m @jaweed3
-- 👀 I’m interested in Python Developer, and Design Ilustration
-- 🌱 I’m currently learning Python, And web developer
-- 💞️ I’m looking to collaborate on Pyhton and Illustration Community
+- 👀 I’m Machine Learning Enthusisast.
+- 🌱 I’m currently learning Python, TensorFlow, PyTorch, and Scikit-Learn.
+- 💞️ I’m looking to collaborate on Machine Learning Projects
 - 📫 How to reach me In Whatsapp +628778452779
-- 😄 Pronouns: ...
+- 😄 Pronouns: He/Him
 - ⚡ Fun fact: I'm Geprek Chicken Lover.
 
 <!---
