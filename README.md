@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm Jawwad Fatih</h1>
 <h3 align="center">Machine Learning Enthusiast from Indonesia</h3>
+<img align="right" alt="coding" width="400" scr="https://tenor.com/view/scaler-create-impact-any-key-programmer-coding-gif-25012205">
 
 - 🔭 I’m currently working on **jaweedDev.**
 
