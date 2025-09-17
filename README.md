@@ -5,7 +5,11 @@
 
 <img align="right" width="400" src="https://camo.githubusercontent.com/4a974e19bea0da24b376ef56cfbf7f8966cc93cf98602b61fa9f6f5d04501b49/68747470733a2f2f6d656469612e74656e6f722e636f6d2f69336c496d426732554551414141414d2f7363616c65722d6372656174652d696d706163742e676966">
 
-I'm Jawwad Fatih, a developer from Indonesia on a journey to become a Machine Learning Engineer. I'm fascinated by the power of deep learning to uncover patterns and solve complex problems. Currently, I'm channeling that passion into hands-on projects using TensorFlow and PyTorch. I believe the best ideas come from collaboration, which is why I'm actively seeking opportunities to team up on impactful deep learning projects. When I'm not coding, I enjoy sharing my learning process through articles on Medium. Let's connect and build something amazing together!
+I'm Jawwad Fatih, a developer from Indonesia on a journey to become a Machine Learning Engineer. I'm fascinated by the power of deep learning to uncover patterns and solve complex problems. 
+
+Currently, I'm channeling that passion into hands-on projects using TensorFlow and PyTorch. I believe the best ideas come from collaboration, which is why I'm actively seeking opportunities to team up on impactful deep learning projects. 
+
+When I'm not coding, I enjoy sharing my learning process through articles on Medium. Let's connect and build something amazing together!
 
 - ⚡ Fun fact i'm a **Geprek Chicken Lover**
 
