@@ -1,3 +1,4 @@
+```
 /**
  * @file    README.md
  * @author  Jawwad
@@ -8,10 +9,6 @@
 #include <edge_ai.h>
 #include <ambition.h>
 #include <no_excuses.h>
-
-// ─────────────────────────────────────────────
-//  PROFILE
-// ─────────────────────────────────────────────
 
 struct Engineer {
     const char* name        = "Jawwad";
@@ -33,7 +30,7 @@ map<Domain, vector<Skill>> stack = {
 void ask_me_about() {
     quantization();        // INT8, zero-point folding, fake-quant graphs
     graph_optimization();  // OpenVINO graph_optimizer, ACL executor wiring
-    edge_deployment();     // sub-10ms inference, no cloud, no excuses
+    edge_deployment();     // sub-10ms inference, no cloud
 }
 
 Project projects[] = {
@@ -42,14 +39,14 @@ Project projects[] = {
         .desc   = "Детекция пострадавших на дронах SAR. "
                   "YOLOv8n, полностью на устройстве.",
         .stack  = { "YOLOv8n", "ESP32-S3", "FastAPI", "DJI EXIF GPS" },
-        .status = SUBMITTED, // FindIT! 2026 — Track A
+        .status = SUBMITTED, 
     },
     {
         .name   = "OpenVINO ARM INT8",
         .desc   = "Оптимизация INT8-свёрток для ARM через ACL. "
                   "Глубоко в graph_optimizer.cpp.",
         .stack  = { "C++", "OpenVINO", "ARM Compute Library" },
-        .status = IN_PROGRESS, // GSoC 2026 — результат 30 апреля
+        .status = IN_PROGRESS, 
     },
     {
         .name   = "PerpusGate",
@@ -58,13 +55,6 @@ Project projects[] = {
         .stack  = { "InsightFace", "FastAPI", "MySQL", "Vanilla JS" },
         .status = PRODUCTION,
     },
-};
-
-Queue<Objective> now = {
-    { PRIORITY_CRITICAL, "GSoC 2026 — ARM INT8 квантизация (Intel/OpenVINO)" },
-    { PRIORITY_HIGH,     "MEXT scholarship → NAIST, Robotics lab"            },
-    { PRIORITY_HIGH,     "IELTS Band 7.0 — сентябрь 2026"                   },
-    { PRIORITY_MEDIUM,   "Стажировка — Nodeflux / Prosa.ai"                  },
 };
 
 int main() {
@@ -77,3 +67,4 @@ int main() {
         ignore(noise);
     }
 }
+```
