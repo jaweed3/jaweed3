@@ -1,4 +1,8 @@
-```
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXN4YWxkZGNleGx5MWJqMmJ1bWFjY200b3MxOHJ5cm5xdnI3d3J0cyZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/LPFNd1AJBoYcVUExmE/giphy.gif"/>
+</p>
+
+```cpp
 /**
  * @file    README.md
  * @author  Jawwad
