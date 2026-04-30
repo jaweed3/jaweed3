@@ -46,13 +46,6 @@ Project projects[] = {
         .status = SUBMITTED,   // FindIT! 2026 Hackathon — Track A: Edge Vision
     },
     {
-        .name   = "OpenVINO ARM INT8",
-        .desc   = "INT8 convolution optimization for ARM via ACL. "
-                  "Deep in graph_optimizer.cpp.",
-        .stack  = { "C++", "OpenVINO", "ARM Compute Library" },
-        .status = IN_PROGRESS,
-    },
-    {
         .name   = "BitJETS-M4",
         .desc   = "1.58-bit TTS on Apple Silicon. "
                   "Ternary weights {-1,0,1}, ~90% size reduction vs FP32.",
