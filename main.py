@@ -1,23 +1,11 @@
 import gifos
-import os
 
-
-# ── Config ──────────────────────────────────────────────────────────
-PHOTO_FILE = "Grachive Amalia Mutya (13).jpg"
 USERNAME = "jaweed3"
 
-# ── Terminal ────────────────────────────────────────────────────────
-t = gifos.Terminal(
-    width=680,
-    height=800,
-    xpad=5,
-    ypad=5,
-    font_size=15,
-)
+t = gifos.Terminal(width=680, height=540, xpad=5, ypad=5, font_size=15)
 t.set_fps(15)
 
 
-# ── Helpers ─────────────────────────────────────────────────────────
 def boot_line(text, row, delay=2, color="white", contin=False):
     t.set_txt_color(color)
     t.gen_text(text=text, row_num=row, contin=contin)
@@ -51,7 +39,7 @@ print_dots_done(3)
 boot_line("Hardware detected:", 4)
 boot_line("  CPU: ARM Cortex-X4 @ 3.4GHz", 5, delay=2)
 boot_line("  RAM: 16GiB LPDDR5X", 6, delay=2)
-boot_line("  Display: 680x800 24-bit Terminal Renderer", 7, delay=2)
+boot_line("  Display: 680x540 24-bit Terminal Renderer", 7, delay=2)
 t.clone_frame(15)
 
 boot_line("Beginning memory test...", 9, delay=4)
@@ -77,7 +65,6 @@ effect_lines = gifos.effects.text_scramble_effect_lines(
 for line in effect_lines:
     t.delete_row(mid_row + 1)
     t.gen_text(line, mid_row + 1, mid_col + 1)
-
 t.clear_frame()
 
 # ── 3. Kernel init ─────────────────────────────────────────────────
@@ -122,19 +109,9 @@ identity = """\x1b[96m\x1b[1mFatih Jawwad Al Mumtaz\x1b[0m
 \x1b[96m----------------------------------------\x1b[0m"""
 t.gen_text(text=identity, row_num=3)
 
-# ── 6. Display photo ───────────────────────────────────────────────
+# ── 6. Farewell ────────────────────────────────────────────────────
 t.gen_prompt(t.curr_row)
-t.gen_typing_text(text="imgcat grachive.jpg", row_num=t.curr_row, contin=True, speed=0.1)
-
-photo_row = t.curr_row + 2
-photo_col = max(1, (t.num_cols - 45) // 2)
-t.paste_image(PHOTO_FILE, row_num=photo_row, col_num=photo_col, size_multiplier=0.4)
-t.clone_frame(45)
-
-# ── 7. Farewell ────────────────────────────────────────────────────
-t.clear_frame()
-t.gen_prompt(1)
-t.gen_typing_text(text='echo "thanks for stopping by!"', row_num=1, contin=True, speed=0.2)
+t.gen_typing_text(text='echo "thanks for stopping by!"', row_num=t.curr_row, contin=True, speed=0.2)
 t.clone_frame(30)
 t.gen_prompt(t.curr_row)
 t.gen_typing_text("reboot", t.curr_row, contin=True, speed=0.1)
@@ -143,6 +120,5 @@ t.clear_frame()
 boot_line("System halted.", 1)
 t.clone_frame(15)
 
-# ── 8. Generate GIF ────────────────────────────────────────────────
+# ── 7. Generate GIF ────────────────────────────────────────────────
 t.gen_gif()
-print("Done — output.gif ready.")
