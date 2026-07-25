@@ -131,3 +131,9 @@
   <text x="40" y="270" font-size="11" fill="#6B7785">UNIDA Gontor, Indonesia</text>
   <text x="920" y="270" font-size="11" fill="#6B7785" text-anchor="end">Erasmus+ KA171 &#183; Univ. of Seville</text>
 </svg>
+
+<br>
+
+<picture>
+  <img alt="Terminal GIF" src="output.gif">
+</picture>

@@ -1,0 +1,32 @@
+name: Regenerate Terminal GIF
+
+on:
+  push:
+    branches: [main]
+    paths: [main.py, 'Grachive Amalia Mutya (13).jpg']
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install github-readme-terminal
+      - name: Generate GIF
+        run: python3.11 main.py
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add output.gif
+          git diff --staged --quiet || git commit -m "regenerate terminal gif [automated]"
+          git push
