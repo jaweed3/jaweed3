@@ -1,0 +1,24 @@
+name: Generate Profile Graph
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+jobs:
+  graph:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate github graph contributions
+        uses: akarshit-1609/dynamic-colors-blinking-graph@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          username: jaweed3
+      - name: Commit generated files
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add dist/graph_light.svg dist/graph_dark.svg
+          git commit -m "Update profile graph" || true
+          git push
